@@ -110,3 +110,18 @@ button{
     
 }
 
+
+
+/* Mikes CSS */ 
+
+
+.left-side{
+    height: 100vh;
+    background-color: red;
+}
+
+.right-side{
+    height: 100vh;
+    background-color: blue;
+}
+
