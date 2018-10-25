@@ -4,7 +4,7 @@ body {
     background: linear-gradient(to left, #5c6d95, #272f59); 
 }
 
-h1, h2, h3, h5, p{
+h1, h2, h3, h4, h5, p{
     color: white;
 }
 
@@ -37,67 +37,60 @@ a:hover, a:focus, a:active {
     transition: all 0.3s;
 }
 
+
+
 .login input{
-    margin: 100px 0px 15px 40px ;
    width: 300px;
-  height: 32px; 
+  height: 40px; 
   background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-  
-}
-
-.login input{
     position: relative;
   color: black;
   font-size: 16px;
-    text-indent: 30px; 
+    text-indent: 30px;
+    margin-bottom: 5%;
+  
 }
 
-
-.login icon{
+/* style glyph */
+.login input.glyphicon {
     width: 30px;
     height: 30px;
     position: absolute;
-   top: 10px;
-   left: 10px;
-    background-image: url(../img/email.png);
-    
+    padding: 10px;
+    pointer-events: none;
 }
 
 
 .password input{
-   margin: 15px 0px 0px 40px ;
    width: 300px;
-  height: 32px;  
+  height: 40px;  
 background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-  
-  
-}
-
-
-.password input{
-    position: relative;
+     position: relative;
   color: black;
   font-size: 16px;
     text-indent: 30px; 
+  
+  
 }
 
-.password img{
+/* style glyph */
+.password.glyphicon {
+    width: 30px;
+    height: 30px;
     position: absolute;
-   top: 10px;
-   left: 10px;
-    background-image: url(../img/password.png);
-    
+    padding: 10px;
+    pointer-events: none;
 }
 
 
 button{
-   margin: 50px 0px 30px 120px;
+   
    width: 150px;
   height: 50px; 
   background: #999999;
@@ -105,9 +98,10 @@ button{
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
     color: #ffffff;
-
-  
-    
+    object-position: center;
+    margin-top: 10%;
+    font-size: 18px;
+ 
 }
 
 
@@ -118,10 +112,35 @@ button{
 .left-side{
     height: 100vh;
     background-color: red;
+    text-align: center;
+    
 }
+
+.left-side {
+    
+}
+
+
 
 .right-side{
     height: 100vh;
     background-color: blue;
 }
+
+
+.logo-holder{
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-image: url(../img/LOGO%20DEV.gif);
+  
+    
+}
+
+
+
+
 
