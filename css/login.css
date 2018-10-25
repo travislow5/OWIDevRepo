@@ -39,54 +39,55 @@ a:hover, a:focus, a:active {
 
 
 
-.login input{
-   width: 300px;
-  height: 40px; 
-  background: #fcfcfc;
+
+
+#input_img {
+    position:inherit;
+    left:200px;
+    width:4%;
+    height:auto;
+}
+
+
+#login input{
+  width: 300px;
+  height: 40px;  
+background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
     position: relative;
   color: black;
   font-size: 16px;
-    text-indent: 30px;
-    margin-bottom: 5%;
-  
+  text-indent: 50px;
+  margin-bottom: 5%;
+
 }
 
-/* style glyph */
-.login input.glyphicon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
+#input_img{
+    position: inherit;
+    left: 200px;
+    width: 4%;
+    height: auto;
 }
 
 
-.password input{
+#password input{
    width: 300px;
   height: 40px;  
 background: #fcfcfc;
   border: 1px solid #aaa;
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-     position: relative;
+    position: relative;
   color: black;
   font-size: 16px;
     text-indent: 30px; 
-  
-  
+    background-image: url(../img/lock%20copy.png);
+    
 }
 
-/* style glyph */
-.password.glyphicon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-}
+
 
 
 button{
@@ -111,7 +112,7 @@ button{
 
 .left-side{
     height: 100vh;
-    background-color: red;
+    background-color: ;
     text-align: center;
     
 }
@@ -126,20 +127,27 @@ button{
     height: 100vh;
     background-color: blue;
 }
+.right-side img{
+    height: 100vh;
+    
+}
 
 
 .logo-holder{
-    width: 250px;
-    height: 250px;
-    background-color: pink;
+    width: 230px;
+    height: 120px;
     margin: 0 auto;
     margin-top: 10%;
     margin-bottom: 10%;
     background-image: url(../img/LOGO%20DEV.gif);
   
-    
 }
 
+img{
+    height: auto;
+    width: 100%;
+   
+}
 
 
 
