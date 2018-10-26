@@ -39,7 +39,7 @@ a:hover, a:focus, a:active {
 
 
 
-.login input{
+.login inputWithIcon{
    width: 300px;
   height: 40px; 
   background: #fcfcfc;
@@ -50,43 +50,126 @@ a:hover, a:focus, a:active {
   color: black;
   font-size: 16px;
     text-indent: 30px;
-    margin-bottom: 5%;
-  
+    margin-bottom: 5%; 
 }
 
-/* style glyph */
-.login input.glyphicon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
-}
-
-
-.password input{
+.password inputWithIcon{
    width: 300px;
-  height: 40px;  
-background: #fcfcfc;
+   height: 40px;  
+   background: #fcfcfc;
+   border: 1px solid #aaa;
+   border-radius: 30px;
+   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
+   position: relative;
+   color: black;
+   font-size: 16px;
+   text-indent: 30px;    
+}
+
+input[type="text"] {
+  width: 300px;
+  height: 40px;
   border: 1px solid #aaa;
   border-radius: 30px;
+    background: #fcfcfc;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-     position: relative;
   color: black;
   font-size: 16px;
-    text-indent: 30px; 
-  
-  
+  outline:inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+    position: relative;
+    margin-bottom: 5%; 
 }
 
-/* style glyph */
-.password.glyphicon {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    padding: 10px;
-    pointer-events: none;
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
 }
+
+.inputWithIcon input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 200px;
+  top: 4px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+    font-size: 20px;
+}
+
+.inputWithIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+
+.elastic-fai-xl{
+    font-size:80px;
+}
+.elastic-fai-lg{
+    font-size:50px;
+}
+.elastic-fai-md{
+    font-size:40px;
+}
+.elastic-fai-sm{
+    font-size:30px;
+}
+.elastic-fai-xs{
+    font-size:20px;
+}
+/* Extra small devices */
+@media(max-width:544px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-xs{
+        font-size:20px;
+    }
+}
+/* Small devices */
+@media(min-width:544px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-sm{
+        font-size:30px;
+    }
+}
+/* Medium devices */
+@media(min-width:768px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-md{
+        font-size:40px;
+    }
+}
+/* Large devices */
+@media(min-width:992px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-lg{
+        font-size:50px;
+    }
+}
+/* Exrta Large devices */
+@media(min-width:1200px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-xl{
+        font-size:80px;
+    }
+}
+
+
 
 
 button{
@@ -104,14 +187,9 @@ button{
  
 }
 
-
-
-/* Mikes CSS */ 
-
-
 .left-side{
     height: 100vh;
-    background-color: red;
+    
     text-align: center;
     
 }
@@ -129,17 +207,19 @@ button{
 
 
 .logo-holder{
-    width: 250px;
-    height: 250px;
+    width: 230px;
+    height:120px;
     background-color: pink;
     margin: 0 auto;
     margin-top: 10%;
     margin-bottom: 10%;
     background-image: url(../img/LOGO%20DEV.gif);
-  
-    
-}
 
+}
+img{
+    height: auto;
+    width: 100%;
+}
 
 
 
