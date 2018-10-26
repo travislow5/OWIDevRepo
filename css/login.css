@@ -123,55 +123,6 @@ input[type="text"]:focus {
 }
 
 
-.elastic-fai-xl{
-    font-size:80px;
-}
-.elastic-fai-lg{
-    font-size:50px;
-}
-.elastic-fai-md{
-    font-size:40px;
-}
-.elastic-fai-sm{
-    font-size:30px;
-}
-.elastic-fai-xs{
-    font-size:20px;
-}
-/* Extra small devices */
-@media(max-width:544px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-xs{
-        font-size:20px;
-    }
-}
-/* Small devices */
-@media(min-width:544px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-sm{
-        font-size:30px;
-    }
-}
-/* Medium devices */
-@media(min-width:768px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-md{
-        font-size:40px;
-    }
-}
-/* Large devices */
-@media(min-width:992px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-lg{
-        font-size:50px;
-    }
-}
-/* Exrta Large devices */
-@media(min-width:1200px){
-    .elastic-fai-group > .elastic-fai, .elastic-fai-xl{
-        font-size:80px;
-    }
-}
-
-
-
-
 button{
    
    width: 150px;
@@ -186,6 +137,14 @@ button{
     font-size: 18px;
  
 }
+
+
+
+
+
+
+
+
 
 .left-side{
     height: 100vh;
@@ -202,8 +161,14 @@ button{
 
 .right-side{
     height: 100vh;
-    background-color: blue;
+    background-color: aqua;
+   
 }
+
+
+
+
+
 
 
 .logo-holder{
