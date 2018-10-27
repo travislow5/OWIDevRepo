@@ -5,7 +5,7 @@ $(function(){
     
     var apiRequest = new XMLHttpRequest();
     
-    apiRequest.open('GET', 'http://www.omdbapi.com/?apikey=26f0eb1&s="Mean Girls"', true);
+    apiRequest.open('GET', 'http://www.omdbapi.com/?apikey=26f0eb1&s="Guardians of the Galaxy"', true);
                     
     
     
@@ -15,9 +15,9 @@ $(function(){
             
             console.log(apiRequest);
 
-        function createContainers(movieTitle, moviePoster, genre){
+        function createContainers(movieTitle, moviePoster, year){
             
-            $(".movieInformation").append("<div class='movie-information-container col-xs-3 content-center'><div class='individualMovie'><img src=" + moviePoster +"></div><div class='movieInfo'><h4 id='movie-name'>" + movieTitle + "</h4><h6 id='movie-genre'>" + genre + "</h6></div><button><img src='../img/movieinfo.png' href='individual_movie.html'></button></div>");            
+            $(".movieInformation").append("<div class='movie-information-container col-xs-3 content-center'><div class='individualMovie'><img src=" + moviePoster +"></div><div class='movieInfo'><h4 id='movie-name'>" + movieTitle + "</h4><h6 id='movie-year'>" + year + "</h6></div><button><img src='../img/movieinfo.png' href='individual_movie.html'></button></div>");            
  
            }
             
@@ -26,13 +26,35 @@ $(function(){
                
                movieTitle = data.Search[i].Title;
                moviePoster = data.Search[i].Poster;
-               genre = data.Search[i].Genre;
+               year = data.Search[i].Year;
                
-               createContainers(movieTitle, moviePoster, genre);
+               createContainers(movieTitle, moviePoster, year);
                 
-             
-      
         }
+            
+            $(".movie-information-container").on("click", function(){
+                
+                var storageReference = +$(this).find("#movie-year").text();
+                console.log(storageReference);
+                
+                for(i=0; i < data.Search.length; i++){
+                    
+                    if(data.Search[i].year === storageReference){
+                        
+                        var title = data.Search[i].Title;
+                        var director = data.Search[i].Director;
+                        var actors = data.Search[i].Actors;
+                        var genre = data.Search[i].Genre;
+                        var runTime = data.Search[i].Runtime;
+                        
+                        localStorage.setItem("title", title);
+                        localStorage.setItem("director", director);
+                        localStorage.setItem("actors", actors);
+                        localStorage.setItem("genre", genre);
+                        localStorage.setItem("runTime", runTime);
+                    }
+                }
+            });
               
         
     }
