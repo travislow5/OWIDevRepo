@@ -10,18 +10,24 @@ p {
     margin: 20px;
 }
 
-#content {
-    padding: 0;
+#sidebarCollapse {
+    z-index: 1;
 }
 
 #featuredCarousel {
     background-color: lightblue;
-    width: 100%;
+/*    width: 100%;*/
+    min-width: 768px;
     height: 400px;
-    z-index: -1;
 }
 
 .carousel-inner .item img {
     width: 1600px;
     height: 400px;
+}
+
+.about h2,
+p {
+    margin: 20px auto;
+    width: 768px;
 }
