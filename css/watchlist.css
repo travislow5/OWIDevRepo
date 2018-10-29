@@ -1,0 +1,90 @@
+
+.right {
+    float: right;
+}
+
+.button {
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    background-color: #384a70;
+    color: white;
+    letter-spacing: 1px;
+    font-family: "Montserrat";
+}
+
+.button:hover{
+    color: white;
+    background-color: #384a70;
+    opacity: 0.9;
+    
+}
+
+.buttons {
+    margin: 0;   
+}
+
+.box-parent{
+    position: relative;
+}
+
+.box-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Movie-Title {
+    color: #384a70;
+    font-family: "Montserrat";
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 1000;
+    float: left;
+    padding-top: 10px;
+  
+}
+
+.Chev-button {
+    padding: 0;
+    height: 25px;
+    width: 60px;
+}
+
+.Chevron {
+    width: 20px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+}
+
+.Info {
+    border-radius: 20px;
+}
+
+.MovieCard {
+    margin: 0;
+    
+}
+
+.MovieCard img {
+    width: 100%;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.card-header{
+    background-color: white;
+}
+
+.poster-image {
+    width: 90%;
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
