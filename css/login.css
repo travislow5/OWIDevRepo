@@ -71,27 +71,60 @@ input[type="text"] {
   height: 40px;
   border: 1px solid #aaa;
   border-radius: 30px;
-  background: #fcfcfc;
+background: #fcfcfc;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
   color: black;
   font-size: 16px;
   outline:inherit;
   box-sizing: border-box;
   transition: 0.3s;
-  position: relative;
-  margin-bottom: 5%; 
+    position: relative;
+    margin-bottom: 5%; 
 }
 
 
 input[type="text"]:focus {
   border-color: dodgerBlue;
   box-shadow: 0 0 8px 0 dodgerBlue;
-   
 }
 
 .inputWithIcon input[type="text"] {
   padding-left: 40px;
 }
+
+
+
+
+
+
+input[type="password"] {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+background: #fcfcfc;
+  box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
+  color: black;
+  font-size: 16px;
+  outline:inherit;
+  box-sizing: border-box;
+  transition: 0.3s;
+    position: relative;
+    margin-bottom: 5%; 
+}
+
+
+input[type="password"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputWithIcon input[type="password"] {
+  padding-left: 40px;
+}
+
+
+
 
 .inputWithIcon {
   position: relative;
@@ -121,7 +154,6 @@ input[type="text"]:focus {
 .inputWithIcon.inputIconBg input[type="text"]:focus + i {
   color: #fff;
   background-color: dodgerBlue;
-    position: fixed;
 }
 
 
@@ -175,10 +207,6 @@ input[type="text"]:focus {
 
 
 
-
-
-
-
 .logo-holder{
     width: 230px;
     height:120px;
@@ -200,11 +228,10 @@ img{
     .right-side{
         background-color: red !important;
     }
-    
-    
-    
-    
+     
 }
+
+
 
 
 
