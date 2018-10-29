@@ -112,3 +112,30 @@ a:hover, a:focus, a:active {
     opacity: 1;
     margin: 5px auto;
 }
+
+.button {
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #24304b;
+    color: white;
+    margin-top:2%;
+    margin-bottom: 5%;
+    font-family: "Montserrat";
+    object-position: center;
+    text-align: center;
+}
+
+.button:hover{
+    color: white;
+    background-color: #f0550e;
+    opacity: 0.9;
+    
+}
+
+.buttons {
+    margin: 0; 
+    object-position: center;
+     text-align: center;
+}
+

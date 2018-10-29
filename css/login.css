@@ -46,7 +46,7 @@ a:hover, a:focus, a:active {
   border: 1px solid #aaa;
   border-radius: 30px;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-    position: relative;
+    position: fixed;
   color: black;
   font-size: 16px;
     text-indent: 30px;
@@ -60,7 +60,7 @@ a:hover, a:focus, a:active {
    border: 1px solid #aaa;
    border-radius: 30px;
    box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-   position: relative;
+   position: fixed;
    color: black;
    font-size: 16px;
    text-indent: 30px;    
@@ -71,21 +71,22 @@ input[type="text"] {
   height: 40px;
   border: 1px solid #aaa;
   border-radius: 30px;
-    background: #fcfcfc;
+  background: #fcfcfc;
   box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
   color: black;
   font-size: 16px;
   outline:inherit;
   box-sizing: border-box;
   transition: 0.3s;
-    position: relative;
-    margin-bottom: 5%; 
+  position: relative;
+  margin-bottom: 5%; 
 }
 
 
 input[type="text"]:focus {
   border-color: dodgerBlue;
   box-shadow: 0 0 8px 0 dodgerBlue;
+   
 }
 
 .inputWithIcon input[type="text"] {
@@ -120,30 +121,37 @@ input[type="text"]:focus {
 .inputWithIcon.inputIconBg input[type="text"]:focus + i {
   color: #fff;
   background-color: dodgerBlue;
+    position: fixed;
 }
 
 
-button{
-   
-   width: 150px;
-  height: 50px; 
-  background: #999999;
-  border: 1px solid #aaa;
-  border-radius: 30px;
-  box-shadow: 0 0 3px #ffffff, 0 10px 15px #cdcdcd inset;
-    color: #ffffff;
+
+
+.button {
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #24304b;
+    color: white;
+    margin-top:2%;
+    margin-bottom: 5%;
+    font-family: "Montserrat";
     object-position: center;
-    margin-top: 10%;
-    font-size: 18px;
- 
+    text-align: center;
 }
 
+.button:hover{
+    color: white;
+    background-color: #f0550e;
+    opacity: 0.9;
+    
+}
 
-
-
-
-
-
+.buttons {
+    margin: 0; 
+    object-position: center;
+     text-align: center;
+}
 
 
 .left-side{
