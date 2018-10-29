@@ -8,9 +8,9 @@ $(".item").click(function(){
 
 // Enable Carousel Controls
 $(".carousel-control-prev").click(function(){
-    $("#myCarousel").carousel("prev");
+    $("#featuredCarousel").carousel("prev");
 });
 
 $(".carousel-control-next").click(function(){
-    $("#myCarousel").carousel("next");
+    $("#featuredCarousel").carousel("next");
 });
