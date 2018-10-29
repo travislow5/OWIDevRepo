@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Information-->
+        <meta name="Subject" content="IDV100">
+        <meta name="Lecturer" content="Mike Maynard">
+        <meta name="Assessment" content="Term 4">
+        
+        <!--bootstrap css-->
+        <link rel="stylesheet" href="../bootstrap4/css/bootstrap.min.css">
+        
+        <!--jquery-->
+        <script src="../jquery/1.12.0/jquery.min.js"></script>
+        
+        <!--bootstrap js-->
+        <script src="../bootstrap4/js/bootstrap.min.js"></script>
+        
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+        <!--js-->
+        <script type="text/javascript" src="../js/template.js"></script>
+        <script type="text/javascript" src="../js/watchlist.js"></script>
+        
+        <!--css-->
+        <link rel="stylesheet" href="../css/template.css">
+        <link rel="stylesheet" href="../css/watchlist.css">
+        <title>Director's Cut | Template</title>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+            <nav id="sidebar">
+                
+                <ul class="list-unstyled components"> 
+                    <li class="active">
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../movies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="../pages/watch_list.html">Watch List</a>
+                    </li>
+                    <li>
+                        <a href="../pages/login.html">Sign Out</a>
+                    </li>    
+                </ul>
+            </nav>
+            <!--side nav-->
+            
+            <div id="content" >
+                <button type="button" id="sidebarCollapse" class="navbar-btn collapsed" data-toggle="collapse">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="line">
+                </div>
+                <h1 id="Title">DIRECTOR'S CUT</h1>
+                <!--content goes here-->
+                <div class="container">
+                    <div class="row">
+                        <div class="left col-sm-6">
+                            <div class="row">
+                                <h2 id="Subtitle" class="col-6">Your Watch List</h2>
+                            </div><!--row-->
+                            <div class="accordion" id="Watchlist">
+                                <div class="Info card">
+                                    <div class="card-header" id="Title-One">
+                                        <h5 class="mb-0">
+                                            <p class="Movie-Title">Raiders of the lost Ark</p>
+                                            <button class="Chev-button btn btn-link" type="button" data-toggle="collapse" data-target="#Info1">
+                                                <img class="Chevron" src="../img/chevron.png">
+                                            </button>
+
+                                        </h5>
+                                    </div><!--card header-->
+                                    <div id="Info1" class="collapse show" data-parent="#Watchlist">
+                                        <div class="card-body">
+
+                                            <div class="row">
+                                                <div class="MovieCard col-6">
+                                                    <img src="../img/Raiders.jpg" alt="Card image">
+                                                </div><!--MovieCard--> 
+                                                <div class="col-6 box-parent">
+                                                <div class="buttons box-child">
+                                                    <a href="#" class="button btn btn-default">Watch Now</a>
+                                                    <a href="#" class="remove button btn btn-default">Remove</a>
+                                                </div><!--buttons-->
+                                            </div>   
+                                            </div><!--row-->
+                                        </div><!--card-body-->
+                                    </div><!--InfoOne-->
+                                </div><!--card-->
+
+
+                                <div class="Info card">
+                                    <div class="card-header" id="Title-One">
+                                        <h5 class="mb-0">
+                                            <p class="Movie-Title">Silence of the Lambs</p>
+                                            <button class="Chev-button btn btn-link" type="button" data-toggle="collapse" data-target="#Info2">
+                                                <img class="Chevron" src="../img/chevron.png">
+                                            </button>
+
+                                        </h5>
+                                    </div><!--card header-->
+                                    <div id="Info2" class="collapse show" data-parent="#Watchlist">
+                                        <div class="card-body">
+
+                                            <div class="row">
+                                                <div class="MovieCard col-6">
+                                                    <img src="../img/Silenceofthelamb.jpg" alt="Card image">
+                                                </div><!--MovieCard--> 
+                                                <div class="col-6 box-parent">
+                                                <div class="buttons box-child">
+                                                    <a href="#" class="button btn btn-default">Watch Now</a>
+                                                    <a href="#" class="remove button btn btn-default">Remove</a>
+                                                </div><!--buttons-->
+                                            </div>   
+                                            </div><!--row-->
+                                        </div><!--card-body-->
+                                    </div><!--InfoOne-->
+                                </div><!--card-->
+
+                                <div class="Info card">
+                                    <div class="card-header" id="Title-One">
+                                        <h5 class="mb-0">
+                                            <p class="Movie-Title">Mean Girls</p>
+                                            <button class="Chev-button btn btn-link" type="button" data-toggle="collapse" data-target="#Info3">
+                                                <img class="Chevron" src="../img/chevron.png">
+                                            </button>
+                                        </h5>
+                                    </div><!--card header-->
+                                    <div id="Info3" class="collapse show" data-parent="#Watchlist">
+                                        <div class="card-body">
+
+                                            <div class="row">
+                                                <div class="MovieCard col-6">
+                                                    <img src="../img/MeanGirls.jpg" alt="Card image">
+                                                </div><!--MovieCard--> 
+                                                <div class="col-6 box-parent">
+                                                <div class="buttons box-child">
+                                                    <a href="#" class="button btn btn-default">Watch Now</a>
+                                                    <a href="#" class="remove button btn btn-default">Remove</a>
+                                                </div><!--buttons-->
+                                            </div>   
+                                            </div><!--row-->
+                                        </div><!--card-body-->
+                                    </div><!--InfoOne-->
+                                </div><!--card-->
+                            </div><!--accordion-->
+                        </div><!--left-->    
+
+                        <div class="right col-sm-6 d-none d-sm-block">
+                            <div class="row">
+                                <h2 id="Subtitle" class="col-6">Movies You Might Like</h2>
+                            </div><!--row-->
+                            <div class="row">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                              <!-- Indicators -->
+                              <ul class="carousel-indicators">
+                                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                <li data-target="#demo" data-slide-to="1"></li>
+                                <li data-target="#demo" data-slide-to="2"></li>
+                              </ul>
+
+                              <!-- The slideshow -->
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="../img/bladerunner.jpg" alt="Los Angeles">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../img/the%20game%20pla.jpg" alt="Chicago">
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="../img/starwars.jpg" alt="New York">
+                                </div>
+                              </div>
+
+                              <!-- Left and right controls -->
+                              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                              </a>
+                              <a class="carousel-control-next" href="#demo" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                              </a>
+
+                            </div>
+                            </div><!--row-->    
+                        </div><!--right-->
+                    </div><!--row-->    
+            </div><!--container-->
+
+            </div>
+            <!--content-->
+        
+        </div><!--wrapper-->
+    </body>
+</html>

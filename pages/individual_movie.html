@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Meta Information-->
+        <meta name="Subject" content="IDV100">
+        <meta name="Lecturer" content="Mike Maynard">
+        <meta name="Assessment" content="Term 4">
+        
+        <!--bootstrap css-->
+        <link rel="stylesheet" href="../bootstrap/4.1.3/css/bootstrap.min.css">
+        
+        <!--jquery-->
+        <script src="../jquery/1.12.0/jquery.min.js"></script>
+        
+        <!--bootstrap js-->
+        <script src="../bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        
+        <!--axios script-->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        
+        <!--font-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        
+        <!--js-->
+        <script type="text/javascript" src="../js/movieinfo.js"></script>
+        
+        
+        <!--css-->
+        <link rel="stylesheet" href="../css/individual_movie.css">
+        <title>Director's Cut | Template</title>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            
+            <nav id="sidebar" class="col-xs-12">
+                
+                <ul class="list-unstyled components"> 
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="movies.html">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#">Watch List</a>
+                    </li>
+                    <li>
+                        <a href="#">Sign Out</a>
+                    </li>    
+                </ul>
+            </nav>
+            <!--side nav--><br>
+            
+            <div class="x-button">
+            
+                <button type="button" id="sidebarCollapse" class="navbar-btn collapsed" data-toggle="collapse">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </button>
+                <div class="line">
+                </div>
+
+            </div>
+            
+            <div id="content">
+                
+                <div class="container-fluid">
+                
+                    <div class="header hidden-xs col-md-6">
+                        <h1 class="text-center hidden-xs">Director's Cut</h1>
+
+                        <h3 class="text-center hidden-xs">Movie Info</h3>
+                    </div>
+                    
+                    <div class="movie">
+                        
+                        <div id="movie-poster">
+                            
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/91Pfwld6ZgL._RI_.jpg" class="img-responsive hidden-sm hidden-md hidden-lg col-xs-12">
+                            
+                            <div class="trailer hidden-xs hidden-md hidden-lg" src="https://www.youtube.com/watch?v=GokKUqLcvD8"></div>
+                        
+                        </div>
+                        
+
+                        <div class="movie-info col-xs-12 col-md-6 pull-md-left row">
+
+                            <div id="movie-title" >
+
+                                <h1 class="text-center">The Dark Knight</h1>
+
+                                <h3 class="pull-right">2003</h3>
+
+                            </div>
+
+                            <div class="information col-xs-12 col-xs-pull-3 col-sm-pull-0 col-md-pull-0">
+
+                                <div id="director">Director:</div><br>
+                                <div id="actors">Actor:</div><br>
+                                <div id="genre">Genre:</div><br>
+                                <div id="runtime">Runtime:</div><br>
+                                <div id="plot">Plot:</div><br>
+
+                            </div><br>
+
+                           <br><button class="btn col-xs-pull-3 col-md-pull">Add To Watchlist</button>
+
+                        </div><!--movie-info-->
+                        
+                        <div id="movie-trailer" class="col-md-6 col-xs-12 push-md-right">
+
+                            <div class="trailer hidden-xs hidden-sm" src="https://www.youtube.com/watch?v=GokKUqLcvD8"></div>
+
+                        </div>
+                        
+                    </div>
+                    
+
+                </div><!--container-->
+
+            </div><!--content-->                 
+     
+        </div><!--wrapper-->
+            
+            
+    </body>
+</html>
