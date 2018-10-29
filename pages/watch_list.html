@@ -19,7 +19,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
         
         <!--js-->
-        <script type="text/javascript" src="../js/template.js"></script>
+        <script type="text/javascript" src="../js/watchlist.js"></script>
         
         <!--css-->
         <link rel="stylesheet" href="../css/template.css">
@@ -34,16 +34,16 @@
                 
                 <ul class="list-unstyled components"> 
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="../index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Movies</a>
+                        <a href="../movies.html">Movies</a>
                     </li>
                     <li>
-                        <a href="#">Watch List</a>
+                        <a href="../pages/watch_list.html">Watch List</a>
                     </li>
                     <li>
-                        <a href="#">Sign Out</a>
+                        <a href="../pages/login.html">Sign Out</a>
                     </li>    
                 </ul>
             </nav>
@@ -58,11 +58,13 @@
                 <div class="line">
                 </div>
                 <h1 id="Title">DIRECTOR'S CUT</h1>
-                <h2 id="Subtitle">Watch List</h2>
                 <!--content goes here-->
                 <div class="container">
                     <div class="row">
                         <div class="left col-sm-6">
+                            <div class="row">
+                                <h2 id="Subtitle" class="col-6">Your Watch List</h2>
+                            </div><!--row-->
                             <div class="accordion" id="Watchlist">
                                 <div class="Info card">
                                     <div class="card-header" id="Title-One">
@@ -151,6 +153,10 @@
                         </div><!--left-->    
 
                         <div class="right col-sm-6 d-none d-sm-block">
+                            <div class="row">
+                                <h2 id="Subtitle" class="col-6">Movies You Might Like</h2>
+                            </div><!--row-->
+                            <div class="row">
                             <div id="demo" class="carousel slide" data-ride="carousel">
 
                               <!-- Indicators -->
@@ -182,6 +188,7 @@
                               </a>
 
                             </div>
+                            </div><!--row-->    
                         </div><!--right-->
                     </div><!--row-->    
             </div><!--container-->
