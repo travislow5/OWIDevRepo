@@ -16,7 +16,7 @@ p {
 
 #featuredCarousel {
     background-color: lightblue;
-/*    width: 100%;*/
+    /*    width: 100%;*/
     min-width: 768px;
     height: 400px;
 }
@@ -30,4 +30,16 @@ p {
 p {
     margin: 20px auto;
     width: 768px;
+}
+
+.MovieCard {
+    margin: 0;
+
+}
+
+.MovieCard img {
+    width: 100%;
+    border-radius: 10%;
+    margin: 0;
+    padding: 0;
 }
