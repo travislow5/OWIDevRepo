@@ -157,3 +157,7 @@ button{
 .movieInfo{
     background-color: grey;
 }
+
+p{
+    color: transparent;
+}
