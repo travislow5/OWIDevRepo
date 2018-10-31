@@ -7,16 +7,12 @@ $(function(){
     };
   
     
-    
-   
-    
    /* for(i=0, i < watchlistArray.length; i++){
         var movieName = watchlistArray[i].title;
         var movieImage = watchlistArray[i].poster;
         
         CreateCards(movieName, movieImage);
     }    
-    
     
     
   */
@@ -26,12 +22,15 @@ $(function(){
     var titleFilm = localStorage.getItem("titleOfFilm");
     var posterFilm = localStorage.getItem("posterOfFilm");
     
-    for(i=0; i < 1; i++){
+    if(titleFilm != null){
+      for(i=0; i < 1; i++){
         var movieName = titleFilm;
         var movieImage = posterFilm;
         var movieCounter = movieCounter + 1;
         CreateCards(movieName, movieImage, movieCounter);
-    } ;
+    } ;  
+    };
+    
     
    
      $(".remove").on("click", function(){
