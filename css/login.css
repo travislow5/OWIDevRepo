@@ -93,10 +93,6 @@ input[type="text"]:focus {
 }
 
 
-
-
-
-
 input[type="password"] {
   width: 300px;
   height: 40px;
@@ -122,6 +118,7 @@ input[type="password"]:focus {
 .inputWithIcon input[type="password"] {
   padding-left: 40px;
 }
+
 
 
 
@@ -159,30 +156,13 @@ input[type="password"]:focus {
 
 
 
-.button {
-    height: 40px;
-    width: 150px;
-    border-radius: 30px;
-    background-color: #24304b;
-    color: white;
-    margin-top:2%;
-    margin-bottom: 5%;
-    font-family: "Montserrat";
-    object-position: center;
-    text-align: center;
-}
-
-.button:hover{
-    color: white;
-    background-color: #f0550e;
-    opacity: 0.9;
-    
-}
 
 .buttons {
     margin: 0; 
     object-position: center;
      text-align: center;
+    text-decoration: none;
+    outline: none;
 }
 
 
@@ -230,6 +210,59 @@ img{
     }
      
 }
+
+
+.error_text
+{
+ margin:0px;
+ color:#DF013A;	
+ font-weight:normal;
+ font-size:14px;
+}
+
+
+input[type="submit"] {
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    background-color: #24304b;
+    color: white;
+    margin-top:2%;
+    margin-bottom: 5%;
+    font-family: "Montserrat";
+    object-position: center;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+
+
+input[type="submit"]:hover{
+    
+    background-color: #f0550e;
+    opacity: 0.9;
+    text-decoration: none;
+    outline: none;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
