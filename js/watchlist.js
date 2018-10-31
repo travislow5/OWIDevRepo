@@ -8,9 +8,7 @@ $(function(){
   
     
     
-    $(".remove").on("click", function(){
-        $(this).closest(".Info").fadeOut(800);
-    })
+   
     
    /* for(i=0, i < watchlistArray.length; i++){
         var movieName = watchlistArray[i].title;
@@ -25,14 +23,21 @@ $(function(){
 // var watchlistArray = [{title: "Venom", ..... poster:"http//..."}] 
     
     var movieCounter = 3
+    var titleFilm = localStorage.getItem("titleOfFilm");
+    var posterFilm = localStorage.getItem("posterOfFilm");
     
     for(i=0; i < 1; i++){
-        var movieName = "Walle";
-        var movieImage = "../img/bladerunner.jpg";
+        var movieName = titleFilm;
+        var movieImage = posterFilm;
         var movieCounter = movieCounter + 1;
         CreateCards(movieName, movieImage, movieCounter);
-    } ;  
+    } ;
     
+   
+     $(".remove").on("click", function(){
+        $(this).closest(".Info").fadeOut(800);
+    })
+
     
-    });
+});
 

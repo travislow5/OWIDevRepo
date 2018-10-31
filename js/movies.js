@@ -61,7 +61,7 @@ function apiCall(){
         
 
         
-    });
+    });//goes to individual movie page
     
 }// end of function 
     

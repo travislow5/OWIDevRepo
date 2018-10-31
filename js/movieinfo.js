@@ -20,6 +20,19 @@ $(function(){
     $("#movieYear").text(year);
     $("#moviePoster").attr('src', poster);
     $("#movie-poster").attr('src', poster);
+    
+    $(".movie").on("click", "button", function(){
+        
+        var watchTitle = title;
+        var watchPoster = poster;
+        
+        localStorage.setItem("titleOfFilm", watchTitle);
+        localStorage.setItem("posterOfFilm", watchPoster);
+        
+        console.log(watchTitle);
+        
+        window.location.href = "watch_list.html";
+    })
 
     
     $('#sidebarCollapse').on('click', function () {
