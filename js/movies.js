@@ -25,7 +25,7 @@ function apiCall(){
         console.log(response.Actors);
         
         
-         $(".movieInformation").append("<div id='movie-information-container' class='col-xs-12 col-sm-12 col-md-4 col-lg-3'><div class='movie-holder'><img id='movie_poster' src=" + moviePoster + "><h3 id='movie_title'>" + movieTitle + "</h3><h4 id='move_year'>" + movieYear + "</h4><h4 id='movie_genre'>" + movieGenre + "</h4><button id='addMovie' class='btn'>Movie Info</button><p id='runTime'>" + movieRuntime + "</p><p id='movie_director'>" + movieDirector + "</p><p id='movie_plot'>" + moviePlot + "</p><p id='movie_actors'>" + movieActors + "</p></div><br></div>");
+         $(".movieInformation").append("<div id='movie-information-container' class='col-xs-12 col-sm-12 col-md-4 col-lg-3'><div class='movie-holder'><img id='movie_poster' src=" + moviePoster + "><h3 id='movie_title'>" + movieTitle + "</h3><h4 id='move_year'>" + movieYear + "</h4><h4 id='movie_genre'>" + movieGenre + "</h4><button id='movieInfo' class='btn'>Movie Info</button><br><button id='addMovie' class='btn'>Add to Watchlist</button><p id='runTime'>" + movieRuntime + "</p><p id='movie_director'>" + movieDirector + "</p><p id='movie_plot'>" + moviePlot + "</p><p id='movie_actors'>" + movieActors + "</p></div><br></div>");
             
       
         });
@@ -35,7 +35,7 @@ function apiCall(){
     }//end of for 
     
     
-    $(".movieInformation").on("click", "button", function(){
+    $(".movieInformation").on("click", "button", "#movieInfo", function(){
       
         var titleOfMovie = $(this).siblings("#movie_title").text();
         var runTimeOfMovie = $(this).siblings("#runTime").text();
@@ -62,6 +62,19 @@ function apiCall(){
 
         
     });//goes to individual movie page
+    
+     $(".movieInformation").on("click", "button", "addMovie", function(){
+        
+        var watchTitle = $(this).siblings("#movie_title").text();
+        var watchPoster = $(this).siblings("#movie_poster").attr('src');
+        
+        localStorage.setItem("titleOfFilm", watchTitle);
+        localStorage.setItem("posterOfFilm", watchPoster);
+        
+        console.log(watchTitle);
+        
+        window.location.href = "watch_list.html";
+    })
     
 }// end of function 
     
