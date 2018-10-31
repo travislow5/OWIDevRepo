@@ -7,16 +7,6 @@ $(function(){
     };
   
     
-   /* for(i=0, i < watchlistArray.length; i++){
-        var movieName = watchlistArray[i].title;
-        var movieImage = watchlistArray[i].poster;
-        
-        CreateCards(movieName, movieImage);
-    }    
-    
-    
-  */
-// var watchlistArray = [{title: "Venom", ..... poster:"http//..."}] 
     
     var movieCounter = 3
     var titleFilm = localStorage.getItem("titleOfFilm");
