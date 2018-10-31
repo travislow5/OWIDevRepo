@@ -37,16 +37,16 @@
                 
                 <ul class="list-unstyled components"> 
                     <li class="active">
-                        <a href="home.html">Home</a>
+                        <a href="#">Home</a>
                     </li>
                     <li>
                         <a href="movies.html">Movies</a>
                     </li>
                     <li>
-                        <a href="watch_list.html">Watch List</a>
+                        <a href="#">Watch List</a>
                     </li>
                     <li>
-                        <a href="../index.html">Sign Out</a>
+                        <a href="#">Sign Out</a>
                     </li>    
                 </ul>
             </nav>
@@ -72,50 +72,54 @@
                         <h1 class="text-center hidden-xs">Director's Cut</h1>
 
                         <h3 class="text-center hidden-xs">Movie Info</h3>
-                    </div>
+                    </div><!--header-->
                     
                     <div class="movie">
                         
-                        <div id="movie-poster">
+                        <div id="smallPoster">
                             
-                            <img src="https://images-na.ssl-images-amazon.com/images/I/91Pfwld6ZgL._RI_.jpg" class="img-responsive hidden-sm hidden-md hidden-lg col-xs-12">
+                            <img id="movie-poster" class="img-responsive hidden-md hidden-lg col-xs-12">
                             
                             <div class="trailer hidden-xs hidden-md hidden-lg" src="https://www.youtube.com/watch?v=GokKUqLcvD8"></div>
                         
-                        </div>
+                        </div><!--smallPoster-->
                         
 
                         <div class="movie-info col-xs-12 col-md-6 pull-md-left row">
 
                             <div id="movie-title" >
 
-                                <h1 class="text-center">The Dark Knight</h1>
+                                <h1 id="movieTitle" class="text-center">The Dark Knight</h1>
 
-                                <h3 class="pull-right">2003</h3>
+                                <h3 id="movieYear" class="pull-right">2003</h3>
 
-                            </div>
+                            </div><!--movie-title-->
 
                             <div class="information col-xs-12 col-xs-pull-3 col-sm-pull-0 col-md-pull-0">
 
-                                <div id="director">Director:</div><br>
-                                <div id="actors">Actor:</div><br>
-                                <div id="genre">Genre:</div><br>
-                                <div id="runtime">Runtime:</div><br>
-                                <div id="plot">Plot:</div><br>
+                                <h4>Director:</h4><div id="director"></div><br>
+                                <h4>Actor:</h4><div id="actors"></div><br>
+                                <h4>Genre:</h4><div id="genre"></div><br>
+                                <h4>Runtime:</h4><div id="runtime"></div><br>
+                                <h4>Plot:</h4><div id="plot"></div><br>
 
-                            </div><br>
+                            </div><br><!--information-->
 
-                           <br><button class="btn col-xs-pull-3 col-md-pull">Add To Watchlist</button>
+                           <br><button class="btn col-xs-push-2 col-md-pull">Add To Watchlist</button>
 
                         </div><!--movie-info-->
                         
-                        <div id="movie-trailer" class="col-md-6 col-xs-12 push-md-right">
+                        <div id="movie_poster" class="col-md-6 col-xs-12 push-md-right">
 
-                            <div class="trailer hidden-xs hidden-sm" src="https://www.youtube.com/watch?v=GokKUqLcvD8"></div>
+                            <div class="largePoster hidden-xs hidden-sm">
+                                
+                                <img id="moviePoster" class="img-responsive">
+                            
+                            </div>
 
-                        </div>
+                        </div><!--largePoster-->
                         
-                    </div>
+                    </div><!--movie-->
                     
 
                 </div><!--container-->

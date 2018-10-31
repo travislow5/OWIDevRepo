@@ -1,11 +1,12 @@
 $(function(){
     
+ 
     var randomMovieArray = ['American Pie', 'Lilo & Stitch', 'Lord of the Rings', 'Harry Potter', 'Moana', 'Lion King', 'Coraline', 'Beetlejuice', 'Jurassic Park', 'Beauty and the Beast', 'All Good Things', 'Deadpool', 'Pretty Woman', 'Dirty Dancing', 'Firewall'];
 
 function apiCall(){
     
     
-    for(i = 0; i < randomMovieArray.length; i++){
+    for(i = 0; i < 15; i++){
         
         var randomMovie = randomMovieArray[i];
         console.log(randomMovie);
@@ -24,7 +25,7 @@ function apiCall(){
         console.log(response.Actors);
         
         
-         $(".movieInformation").append("<div id='movie-information-container' class='col-xs-12 col-sm-12 col-md-4 col-lg-3'><div class='movie-holder'><img id='movie_poster' src=" + moviePoster + "><h3 id='movie_title'>Title:" + movieTitle + "</h3><h4 id='move_year'>Year:" + movieYear + "</h4><h4 id='movie_genre'>Genre:" + movieGenre + "</h4><a href='individual_movie.html' ><button class='addMovie'>Movie Info</button></a><p id='runTime'>" + movieRuntime + "</p><p id='movie_director'>" + movieDirector + "</p><p id='movie_plot'>" + moviePlot + "</p><p id='movie_actors'>" + movieActors + "</p></div><br></div>");
+         $(".movieInformation").append("<div id='movie-information-container' class='col-xs-12 col-sm-12 col-md-4 col-lg-3'><div class='movie-holder'><img id='movie_poster' src=" + moviePoster + "><h3 id='movie_title'>" + movieTitle + "</h3><h4 id='move_year'>" + movieYear + "</h4><h4 id='movie_genre'>" + movieGenre + "</h4><button id='addMovie' class='btn'>Movie Info</button><p id='runTime'>" + movieRuntime + "</p><p id='movie_director'>" + movieDirector + "</p><p id='movie_plot'>" + moviePlot + "</p><p id='movie_actors'>" + movieActors + "</p></div><br></div>");
             
       
         });
@@ -36,50 +37,35 @@ function apiCall(){
     
     $(".movieInformation").on("click", "button", function(){
       
-        var runTimeOfMovie = $(this).siblings("#runTime").text();
         var titleOfMovie = $(this).siblings("#movie_title").text();
+        var runTimeOfMovie = $(this).siblings("#runTime").text();
         var yearOfMovie = $(this).siblings("#move_year").text();
         var genreOfMovie = $(this).siblings("#movie_genre").text();
         var directorOfMovie = $(this).siblings("#movie_director").text();
         var plotOfMovie = $(this).siblings("#movie_plot").text();
         var actorsOfMovie = $(this).siblings("#movie_actors").text();
+        var posterOfMovie = $(this).siblings("#movie_poster").attr('src');
         
 
-        console.log(titleOfMovie);
+        localStorage.setItem("filmTitle", titleOfMovie);
+        localStorage.setItem("filmRuntime", runTimeOfMovie);
+        localStorage.setItem("filmYear", yearOfMovie);
+        localStorage.setItem("filmGenre", genreOfMovie);
+        localStorage.setItem("filmDirector", directorOfMovie);
+        localStorage.setItem("filmPlot", plotOfMovie);
+        localStorage.setItem("filmActors", actorsOfMovie);
+        localStorage.setItem("filmPoster", posterOfMovie);
         
-        for(i=0; i > randomMovieArray.length; i ++){
-            
-            if(randomMovieArray[i] === titleOfMovie){
-                
-                var title = response[i].Title;
-                var director = response[i].Director;
-                var actors = response[i].Actors;
-                var genre = response[i].Genre;
-                var runTime = response[i].Runtime;
-                        
-                localStorage.setItem("title", titleOfMovie);
-                localStorage.setItem("director", directorOfMovie);
-                localStorage.setItem("actors", actorsOfMovie);
-                localStorage.setItem("genre", genreOfMovie);
-                localStorage.setItem("runTime", runTimeOfMovie);
-            }
+           
+        window.location.href = "individual_movie.html";
         
-        }
 
-        
         
     });
     
 }// end of function 
     
-  
-       
-                
-   
-    
-    
-        
-        
+      
 
 
 apiCall();
