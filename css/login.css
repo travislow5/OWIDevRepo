@@ -190,11 +190,10 @@ input[type="password"]:focus {
 .logo-holder{
     width: 230px;
     height:120px;
-    background-color: pink;
     margin: 0 auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    background-image: url(../img/LOGO%20DEV.gif);
+    background-image: url(../img/LOGO-DEV.gif);
 
 }
 img{
