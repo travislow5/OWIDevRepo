@@ -13,11 +13,13 @@ h1, h2, h3, p{
     text-align: center;
     font-size: 30px;
     letter-spacing: 2px;
+    font-family: "Quicksand";
 }
 
 #Subtitle {
     text-align: center;
     font-size: 20px;
+    font-family: "Quicksand";
 }
 
 h3{
