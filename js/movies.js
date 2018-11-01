@@ -63,10 +63,37 @@ function apiCall(){
     
     
 }// end of function 
+
+    /*
+function filterBy(theGenre){
+    for(i = 0; i < 24; i++){
+        $("#movie-information-container").remove;
+    }
     
-      
+    for(i = 0; i < 24; i++){
+        if ($('#movieGenre')==theGenre) {
+            var randomMovie = randomMovieArray[i];
+           
+            $.getJSON('http://www.omdbapi.com/?apikey=26f0eb1&t=' + encodeURI(randomMovie)).then(function(response){
+                var movieTitle = response.Title;
+                var movieYear = response.Year;
+                var movieGenre = response.Genre;
+                var moviePoster = response.Poster;
+                var movieDirector = response.Director;
+                var movieRuntime = response.Runtime;
+                var moviePlot = response.Plot;
+                var movieActors = response.Actors;
+
+                console.log(response.Actors);
 
 
+                $(".movieInformation").append("<div id='movie-information-container' class='col-xs-12 col-sm-12 col-md-4 col-lg-3'><div class='movie-holder'><img id='movie_poster' src=" + moviePoster + "><h3 id='movie_title'>" + movieTitle + "</h3><h4 id='move_year'>" + movieYear + "</h4><h4 id='movie_genre'>" + movieGenre + "</h4><button id='movieInfo' class='btn'>Movie Info</button><p id='runTime'>" + movieRuntime + "</p><p id='movie_director'>" + movieDirector + "</p><p id='movie_plot'>" + moviePlot + "</p><p id='movie_actors'>" + movieActors + "</p></div><br></div>");
+            });
+        }
+    }
+}
+*/
+    
 apiCall();
     
     $('#sidebarCollapse').on('click', function () {

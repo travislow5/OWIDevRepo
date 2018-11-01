@@ -177,6 +177,11 @@ button{
     
 }
 
+.filter-button{
+    width: 200px;
+    border: none;
+}
+
 .movieInformation{
     width: 100%;
     height: 667px;
