@@ -1,12 +1,12 @@
 $(function(){
     
  
-    var randomMovieArray = ['American Pie', 'Lilo & Stitch', 'Lord of the Rings', 'Harry Potter', 'Moana', 'Lion King', 'Coraline', 'Beetlejuice', 'Jurassic Park', 'Beauty and the Beast', 'All Good Things', 'Deadpool', 'Pretty Woman', 'Dirty Dancing', 'Firewall'];
+    var randomMovieArray = ['American Pie', 'Lilo & Stitch', 'Lord of the Rings', 'Harry Potter', 'Moana', 'Lion King', 'Coraline', 'Beetlejuice', 'Jurassic Park', 'Beauty and the Beast', 'All Good Things', 'Deadpool', 'Pretty Woman', 'Dirty Dancing', 'Firewall','John Wick: Chapter 2', 'The Conjuring 2', 'The Godfather', 'Jaws', 'Pulp Fiction', 'Gladiator', 'Braveheart', 'Baby Driver', 'Blade Runner 2049'];
 
 function apiCall(){
     
     
-    for(i = 0; i < 15; i++){
+    for(i = 0; i < 24; i++){
         
         var randomMovie = randomMovieArray[i];
         console.log(randomMovie);
