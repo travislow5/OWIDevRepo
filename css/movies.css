@@ -30,6 +30,19 @@ a:hover, a:focus, a:active {
     align-items: stretch;
 }
 
+#Title {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Quicksand";
+}
+
+#Subtitle {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Quicksand";
+}
+
 #content {
     width: 100%;
     padding: 20px;
