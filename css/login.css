@@ -178,7 +178,7 @@ input[type="password"]:focus {
     width: 230px;
     height:120px;
     margin: 0 auto;
-    margin-top: 10%;
+    margin-top: 20%;
     margin-bottom: 10%;
     background-image: url(../img/LOGO-DEV.gif);
 
@@ -226,8 +226,8 @@ input[type="submit"]:hover{
 
 
 .img-holder{
-    width: 530px;
-    height:320px;
+    width: 100%;
+    height: auto;
     margin-top: 2%;
     margin-bottom: 0;
     background-image: url(../img/charles-deluvio-466056-unsplash.jpg);
