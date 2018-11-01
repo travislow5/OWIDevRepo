@@ -120,9 +120,6 @@ input[type="password"]:focus {
 }
 
 
-
-
-
 .inputWithIcon {
   position: relative;
 }
@@ -154,9 +151,6 @@ input[type="password"]:focus {
 }
 
 
-
-
-
 .buttons {
     margin: 0; 
     object-position: center;
@@ -168,23 +162,16 @@ input[type="password"]:focus {
 
 .left-side{
     height: 100vh;
-    
     text-align: center;
     
 }
 
-.left-side {
-    
-}
-
-
 
 .right-side{
     height: 100vh;
-    background-color: aqua;
-   
+    object-position: center;
+  
 }
-
 
 
 .logo-holder{
@@ -201,14 +188,6 @@ img{
     width: 100%;
 }
 
-
-@media only screen and (min-width: 600px){
-    
-    .right-side{
-        background-color: red !important;
-    }
-     
-}
 
 
 .error_text
@@ -241,17 +220,24 @@ input[type="submit"]:hover{
     background-color: #f0550e;
     opacity: 0.9;
     text-decoration: none;
-    outline: none;
-    
-    
-    
+    outline: none;   
 }
 
 
 
+.img-holder{
+    width: 530px;
+    height:320px;
+    margin-top: 2%;
+    margin-bottom: 0;
+    background-image: url(../img/charles-deluvio-466056-unsplash.jpg);
+    float: right;
 
-
-
+}
+img{
+    height: auto;
+    width: 100%;
+}
 
 
 
